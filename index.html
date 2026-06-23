@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas One | Terra em Tempo Real</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hud left">
+      <div class="brand">
+        <span class="pulse"></span>
+        <div>
+          <h1>ATLAS ONE</h1>
+          <p>Terra viva em tempo real</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Agora no planeta</h2>
+        <p id="utcTime">UTC: --:--:--</p>
+        <p id="localTime">Local: --:--:--</p>
+        <p id="dayInfo">Dia do ano: --</p>
+      </div>
+
+      <div class="card">
+        <h2>Lua regente</h2>
+        <p id="moonPhase">Calculando...</p>
+        <p id="moonAge">Idade lunar: --</p>
+        <div class="moon-meter">
+          <div id="moonMeterFill"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scene"></section>
+
+    <section class="hud right">
+      <div class="card">
+        <h2>Sol</h2>
+        <p id="sunPosition">Iluminação em tempo real</p>
+        <p>O lado claro da Terra acompanha o horário atual.</p>
+      </div>
+
+      <div class="card">
+        <h2>Constelações</h2>
+        <p>Camada visual com linhas estelares inspiradas no céu real.</p>
+        <p class="tiny">Próxima evolução: mapa astronômico por localização.</p>
+      </div>
+
+      <div class="card">
+        <h2>Comandos</h2>
+        <p>Arraste para girar.</p>
+        <p>Scroll para aproximar.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>Atlas One v0.1</span>
+      <span>🌍 ☀️ 🌕 ✦</span>
+    </footer>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
